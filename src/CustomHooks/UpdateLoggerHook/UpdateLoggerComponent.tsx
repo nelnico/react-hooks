@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useUpdateLogger from "./useUpdateLogger";
 
-const UpdateLoggerHook = () => {
+const UpdateLoggerComponent = () => {
     const [name, setName] = useState('');
     useUpdateLogger(name);
     return (
@@ -9,4 +9,4 @@ const UpdateLoggerHook = () => {
     );
 }
 
-export default UpdateLoggerHook
+export default UpdateLoggerComponent

@@ -1,6 +1,6 @@
 import useLocalStorage from "./useLocalStorage";
 
-const LocalStorageHook = () => {
+const LocalStorageComponent = () => {
   const [name, setName] = useLocalStorage("name", "");
 
   return (
@@ -8,4 +8,4 @@ const LocalStorageHook = () => {
   );
 };
 
-export default LocalStorageHook;
+export default LocalStorageComponent;

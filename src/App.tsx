@@ -1,18 +1,24 @@
-import LocalStorageHook from "./LocalStorageHook/LocalStorageHook";
-import UpdateLoggerHook from "./UpdateLoggerHook/UpdateLoggerHook";
-import UseToggleHook from "./UseToggleHook/UseToggleHook";
+
+import LocalStorageComponent from "./CustomHooks/LocalStorageHook/LocalStorageComponent";
+import { UseTimeoutComponent } from "./CustomHooks/TimeoutHook/UseTimeoutComponent";
+import UpdateLoggerComponent from "./CustomHooks/UpdateLoggerHook/UpdateLoggerComponent";
+import UseToggleComponent from "./CustomHooks/UseToggleHook/UseToggleComponent";
 
 function App() {
   return (
     <div>
       <h2>Local Storage Hook</h2>
-      <LocalStorageHook />
+      <LocalStorageComponent />
       <hr />
       <h2>Update Logger Hook</h2>
-      <UpdateLoggerHook />
+      <UpdateLoggerComponent />
       <hr />
       <h2>Toggle Hook</h2>
-      <UseToggleHook />
+      <UseToggleComponent />
+      <hr />
+      <h2>Timeout Hook</h2>
+      <span>Does not work....need read up more on useRef, useCallback to figure it out</span>
+      <UseTimeoutComponent />
     </div>
   );
 }

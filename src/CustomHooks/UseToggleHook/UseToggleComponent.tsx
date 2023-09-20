@@ -1,6 +1,6 @@
 import useToggle from './useToggle';
 
-const UseToggleHook = () => {
+const UseToggleComponent = () => {
 
     const [value, toggleValue] = useToggle(false);
 
@@ -14,4 +14,4 @@ const UseToggleHook = () => {
   )
 }
 
-export default UseToggleHook
+export default UseToggleComponent
